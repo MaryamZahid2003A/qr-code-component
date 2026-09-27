@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- This tells the browser "this is a modern HTML5 page" -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- This makes the page look good on phones too -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Code Component</title>
+
+  <!-- This links our CSS file (the styling) to this HTML file (the content) -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- 
+    This <main> is the whole white card.
+    Everything inside it (image, heading, paragraph) is one "card".
+  -->
+  <main class="card">
+
+    <!-- The blue box with the QR code image inside -->
+    <img
+      class="card__image"
+      src="images/image-qr-code.png"
+      alt="QR code that links to the Frontend Mentor website"
+    />
+
+    <!-- The bold title text -->
+    <h1 class="card__title">
+      Improve your front-end skills by building projects
+    </h1>
+
+    <!-- The smaller grey paragraph text -->
+    <p class="card__text">
+      Scan the QR code to visit Frontend Mentor and take your coding skills
+      to the next level
+    </p>
+
+  </main>
+
+</body>
+</html>

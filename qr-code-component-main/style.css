@@ -1,0 +1,72 @@
+/* ============================================
+   1. BASIC RESET
+   Browsers add their own default spacing.
+   We remove it so we can control spacing ourselves.
+   ============================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* padding/border no longer add extra width */
+}
+
+/* ============================================
+   2. PAGE BACKGROUND
+   This styles the whole page (the light blue background).
+   ============================================ */
+body {
+  min-height: 100vh; /* full height of the screen */
+
+  /* center the card in the middle of the page */
+  display: flex;
+  justify-content: center; /* center left/right */
+  align-items: center;     /* center top/bottom */
+
+  background-color: hsl(212, 45%, 89%); /* light blue-grey */
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem; /* keeps card from touching screen edges on mobile */
+}
+
+/* ============================================
+   3. THE CARD
+   This is the white rounded box that holds everything.
+   ============================================ */
+.card {
+  background-color: white;
+  border-radius: 20px;
+  max-width: 320px;      /* card never gets wider than this */
+  width: 100%;           /* but shrinks on small screens */
+  padding: 16px;         /* space between card edge and content */
+  text-align: center;
+
+  /* soft shadow under the card */
+  box-shadow: 0 25px 30px -10px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================
+   4. THE QR CODE IMAGE
+   ============================================ */
+.card__image {
+  width: 100%;        /* image fills the card width */
+  border-radius: 12px; /* rounded corners on the image itself */
+  display: block;      /* removes small gap under images */
+}
+
+/* ============================================
+   5. THE TITLE (bold dark text)
+   ============================================ */
+.card__title {
+  color: hsl(218, 44%, 22%); /* dark navy blue */
+  font-size: 1.4rem;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+/* ============================================
+   6. THE PARAGRAPH (grey text)
+   ============================================ */
+.card__text {
+  color: hsl(220, 15%, 55%); /* grey */
+  font-size: 0.95rem;
+  line-height: 1.5;         /* space between lines of text */
+  padding: 0 8px 8px;       /* a little breathing room left/right/bottom */
+}
